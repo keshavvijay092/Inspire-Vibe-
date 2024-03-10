@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>My Journal</title>
+</head>
+<body>
+
+  <header>
+    <h1>My Journal</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <textarea id="journalEntry" placeholder="Write your thoughts here..."></textarea>
+      <button onclick="saveEntry()">Save</button>
+      <button onclick="clearEntry()">Clear</button>
+    </div>
+
+    <div class="entries">
+      <h2>Previous Entries</h2>
+      <ul id="entryList"></ul>
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    height: 50%;
+    width: 100%;
+  }
+  
+  :root {
+    /* fonts */
+    --font-rubik: Rubik;
+    --font-arimo: Arimo;
+  
+    /* font sizes */
+    --font-size-lg: 18px;
+    --font-size-5xl: 24px;
+  
+    /* Colors */
+    --color-tomato: #ff6333;
+    --color-white: #fff;
+    --color-darkgray: #a5a5a5;
+  }
+  

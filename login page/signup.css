@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background: black;
+}
+
+.container {
+    position: relative;
+    width: 60%;
+    height: 80%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    transform: translateX(100%);
+}
+
+.overlay {
+    position: relative;
+    height: 100%;
+    width: 200%;
+    left: -100%;
+    background: #ff416c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.overlay-right {
+    transform: translateX(0);
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.social img {
+    width: 40px;
+}
+
+span {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff416c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ghost {
+    background: transparent;
+    border: 1px solid #ff416c;
+    color: #ff416c;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container, .overlay-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        width: 100%;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .overlay-container {
+        display: none;
+    }
+}

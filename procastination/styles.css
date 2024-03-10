@@ -1,0 +1,58 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #ccc;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+}
+
+.articles{
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+}
+img {
+    max-width: 100%;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: url(https://plus.unsplash.com/premium_photo-1674489620667-eaf4a0094996?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2NyYXN0aW5hdGlvbnxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+/* Add more styling based on your preferences */
